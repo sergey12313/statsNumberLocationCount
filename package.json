@@ -8,6 +8,10 @@
   },
   "author": "",
   "license": "ISC",
+  "eslintConfig": {
+    "root": true,
+    "extends": "airbnb-base"
+  },
   "dependencies": {
     "mysql2": "^1.6.5",
     "sybase-promised": "^1.0.3"

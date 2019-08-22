@@ -18,9 +18,7 @@ async function main() {
     numbersIncludeContract: vatsNumbersIncludeContract.length + allTerminalsIncludeContract.length,
     vatsNumbersIncludeContract: vatsNumbersIncludeContract.length,
   };
-
   await writeStats(mysqlStatOptions)(Object.assign(statsNumbers, statsNumbersLocation));
 }
 
 main().catch((e) => global.console.error(e));
-

@@ -56,7 +56,7 @@ exports.default = (function (options) { return function writeStats(stats) {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    sql = "Insert into numberLocationCount1 set ?";
+                    sql = "Insert into numberLocationCount set ?";
                     return [4 /*yield*/, mysql_helper_1.default(options)];
                 case 1:
                     mysqlHelper = _a.sent();

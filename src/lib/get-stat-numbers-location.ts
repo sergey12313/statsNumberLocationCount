@@ -1,6 +1,10 @@
 import {allTerminalsResult, IStatsNumbersLocation} from "./interfaces";
 
 const IP: { [key: string]: keyof IStatsNumbersLocation } = {
+  "10.120.1.250": "zel22_eltex",
+  "10.120.1.251": "zel22_eltex",
+  "10.120.1.252": "zel22_eltex",
+  "10.120.1.253": "zel22_eltex",
   "10.120.14.250": "park9",
   "10.120.14.251": "park9",
   "10.120.17.230": "zel10",
@@ -9,6 +13,7 @@ const IP: { [key: string]: keyof IStatsNumbersLocation } = {
   "10.120.17.233": "zel10",
   "10.120.17.234": "zel10",
   "10.120.17.235": "zel10",
+  "10.120.28.230": "volgostrtoy",
   "10.120.4.230": "mr2_31",
   "10.120.4.232": "mr2_31",
   "10.120.4.233": "mr2_31",
@@ -39,11 +44,13 @@ export default function getStatNumbersLocation(terminals: allTerminalsResult) {
     mr2_31: 0,
     nishegorodskay5: 0,
     numbersOnVoipGw: 0,
-    park9:0,
+    park9: 0,
     pionerskay2: 0,
     shochina5: 0,
+    volgostrtoy: 0,
     zel10: 0,
     zel22: 0,
+    zel22_eltex: 0,
   };
   terminals.forEach((element) => {
     const { ip } = element;

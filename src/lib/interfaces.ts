@@ -29,6 +29,8 @@ export interface IStatsNumbersLocation {
     ats9: number;
     ats7: number;
     ats2: number;
+    zel22_eltex: number;
+    volgostrtoy: number;
 }
 
 export interface IAllStats extends IStatsNumbers, IStatsNumbersLocation {
